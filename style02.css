@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("/Imagenes/su-san-lee-E_eWwM29wfU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cuerpo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    min-height: 100%
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(44, 39, 26);
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 45px;
+    text-decoration-line: underline;
+}
+
+body > *{
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "section"
+    "footer"
+    ;
+}
+
+.header1{
+    grid-area: header1;
+}
+
+.section1{
+    grid-area: section1;
+    text-align: justify;
+    background-color:white;
+    opacity: 70%;
+}
+
+.p1{
+    grid-area: p1;
+    text-align: justify;
+    padding: 10px;
+    background-color:white;
+    opacity: 70%;
+}
+.h41{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.p2{
+    grid-area: p2;
+    text-align: justify;
+    padding: 10px;
+    background-color:white;
+    opacity: 70%;
+}
+.h42{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.p3{
+    grid-area: p3;
+    text-align: justify;
+    padding: 10px;
+    background-color:white;
+    opacity: 70%;
+}
+.h43{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.p4{
+    grid-area: p4;
+    text-align: justify;
+    padding: 10px;
+    background-color:white;
+    opacity: 70%;
+}
+.h44{
+    text-align: center;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+@media (min-width:600px){
+    body{
+        grid-template-columns: 50% 50%;
+        grid-template-rows:  auto ;
+        grid-template-areas: 
+        "header1 header1"
+        "section1 section1"
+        "p1 p2"
+        "p3 p4";
+    }
+}
+
+@media (min-width:900px){
+    body{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header1 header1 header1 header1"
+        "section1 section1 section1 section1"
+        "p1 p2 p3 p4";
+    }
+}
